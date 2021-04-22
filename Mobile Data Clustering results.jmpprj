@@ -1,0 +1,59 @@
+﻿/* JMP 15.2.0 */
+New Project(
+	Run Script(
+		Open(
+			"Mobile Data Clustering Results.jmp",
+			Set Window ID( "b5eac468-b23b-9f41-8f4f-f257fb332b9f" ),
+			invisible
+		);
+		Open(
+			"Mobile Data Clustering Updated Results.jmp",
+			Set Window ID( "0a2fda4f-d5a5-7b4c-a11f-4f62df981911" )
+		);
+		Open(
+			"Smart Phone Clustering Updated Results - K Means Cluster.jrp",
+			Set Window ID( "63601a04-9578-9547-810d-5f765519a140" )
+		);
+	),
+	Set Layout(
+		H Splitter Box(
+			Size( 1366, 637 ),
+			<<Set Sizes( {0.14, 0.86} ),
+			<<Dockable(),
+			V Splitter Box(
+				Size( 191, 637 ),
+				<<Set Sizes( {0.33, 0.33, 0.33} ),
+				<<Dockable(),
+				Tab Page Box(
+					Title( "Window List" ),
+					Window ID( "Window List" )
+				),
+				Tab Page Box(
+					Title( "Bookmarks" ),
+					Window ID( "Bookmarks" )
+				),
+				Tab Page Box(
+					Title( "Recent Files" ),
+					Window ID( "Recent Files" )
+				)
+			),
+			Tab Box(
+				<<Dockable(),
+				Tab Page Box(
+					Title( "Mobile Data Clustering Updated Results" ),
+					Window ID(
+						"0a2fda4f-d5a5-7b4c-a11f-4f62df981911"
+					)
+				),
+				Tab Page Box(
+					Title(
+						"Smart Phone Clustering Updated Results - K Means Cluster"
+					),
+					Window ID(
+						"63601a04-9578-9547-810d-5f765519a140"
+					)
+				)
+			)
+		)
+	)
+)
